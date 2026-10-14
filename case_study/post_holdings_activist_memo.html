@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Post Holdings: Separate the Businesses, Pay Down Debt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #ffffff;
+  --ink: #1b2430;
+  --muted: #5b6573;
+  --rule: #d7dce1;
+  --accent: #1f5e4a;
+  --accent-soft: #e7f1ec;
+  --bar-sq: #8a94a1;
+  --bar-plan: #7fb39c;
+  --bar-rerate: #1f5e4a;
+  --today: #b4492f;
+  color-scheme: light;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #141a20; --ink: #e4e8ec; --muted: #9aa5b1; --rule: #2e3843;
+    --accent: #7fc2a5; --accent-soft: #1d2e28; --bar-sq: #6f7a87; --bar-plan: #4f8c72;
+    --bar-rerate: #8fd1b4; --today: #e8866c; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #141a20; --ink: #e4e8ec; --muted: #9aa5b1; --rule: #2e3843;
+  --accent: #7fc2a5; --accent-soft: #1d2e28; --bar-sq: #6f7a87; --bar-plan: #4f8c72;
+  --bar-rerate: #8fd1b4; --today: #e8866c; color-scheme: dark;
+}
+*, *::before, *::after { box-sizing: inherit; }
+html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 1.0625rem; line-height: 1.62;
+}
+main { max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+h1, h2, h3, .memo-head, table, figcaption, .note, .ask {
+  font-family: "Libre Franklin", "Helvetica Neue", Arial, sans-serif;
+}
+.memo-head {
+  display: grid; grid-template-columns: 4.5rem 1fr; gap: .25rem 1rem;
+  font-size: .9rem; padding-bottom: 1.25rem; border-bottom: 3px solid var(--ink); margin-bottom: 2rem;
+}
+.memo-head dt { color: var(--muted); }
+.memo-head dd { margin: 0; }
+h1 { font-size: 1.95rem; line-height: 1.18; font-weight: 700; margin: 0 0 1.25rem; letter-spacing: -0.01em; }
+h2 { font-size: 1.2rem; font-weight: 700; margin: 2.75rem 0 .75rem; color: var(--accent); }
+h3 { font-size: 1rem; font-weight: 600; margin: 1.75rem 0 .4rem; }
+p { margin: 0 0 1rem; }
+.ask {
+  background: var(--accent-soft); border-left: 4px solid var(--accent);
+  padding: 1rem 1.25rem; margin: 1.5rem 0 2rem; font-size: 1rem; line-height: 1.5;
+}
+.ask strong { display: block; margin-bottom: .35rem; }
+ol.steps { padding-left: 1.4rem; }
+ol.steps li { margin-bottom: .6rem; }
+ul { padding-left: 1.25rem; }
+li { margin-bottom: .45rem; }
+.table-wrap { overflow-x: auto; margin: 1rem 0 1.5rem; }
+table { border-collapse: collapse; width: 100%; font-size: .88rem; line-height: 1.35; }
+th, td { padding: .5rem .6rem; text-align: right; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+th:first-child, td:first-child { text-align: left; white-space: normal; }
+thead th { font-weight: 600; border-bottom: 2px solid var(--ink); vertical-align: bottom; }
+tr.total td { font-weight: 700; border-top: 2px solid var(--ink); }
+td.hi { background: var(--accent-soft); font-weight: 700; }
+figure { margin: 1.75rem 0 2rem; }
+figure svg { width: 100%; height: auto; display: block; }
+figcaption, .note { font-size: .82rem; color: var(--muted); line-height: 1.45; }
+figcaption { margin-top: .5rem; }
+.note { margin-top: -.75rem; margin-bottom: 1.25rem; }
+svg text { font-family: "Libre Franklin", Arial, sans-serif; fill: var(--ink); }
+svg .axis { stroke: var(--rule); }
+footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); font-size: .82rem; color: var(--muted); font-family: "Libre Franklin", Arial, sans-serif; }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (max-width: 34rem) {
+  main { padding-top: 1.75rem; }
+  h1 { font-size: 1.55rem; }
+  body { font-size: 1rem; }
+}
+@media print {
+  :root { --paper: #fff; --ink: #000; --muted: #444; }
+  main { max-width: none; padding: 0; }
+  h2 { break-after: avoid; }
+  figure, .table-wrap, .ask { break-inside: avoid; }
+  a { color: inherit; text-decoration: none; }
+}
+</style>
+</head>
+<body>
+<main>
+
+<dl class="memo-head">
+  <dt>To</dt><dd>Investment Committee</dd>
+  <dt>From</dt><dd>James Foehner</dd>
+  <dt>Date</dt><dd>October 13, 2026</dd>
+</dl>
+
+<h1>Post Holdings has traded at a discount to its peers for more than a decade. The fix is to separate its businesses and pay down debt, not to keep borrowing to buy back stock.</h1>
+
+<div class="ask">
+  <strong>Recommendation</strong>
+  Build a position in Post Holdings (NYSE: POST) at about $77 per share and push the board for four changes: sell Weetabix, direct free cash flow to debt reduction, commit to spinning off the Foodservice business once leverage is near 4x, and put capital allocation under independent board oversight. Holding today's valuation multiple, the plan is worth about $111 per share by the end of fiscal 2029 (about 13% a year) and holds up better than the current strategy if earnings shrink. Completing the Foodservice spin-off lifts that to about $128 per share (about 19% a year), without assuming any re-rating of the remaining Post.
+</div>
+
+<h2>Summary</h2>
+<p>Post is a St. Louis food holding company that owns Honey Bunches of Oats and Pebbles cereal, several pet food brands, Michael Foods (eggs and potatoes sold to restaurants), Bob Evans side dishes, and Weetabix, the leading cereal brand in the United Kingdom. Its businesses are solid, cash-generative, and mostly slow-shrinking.</p>
+<p>Post has traded below the valuation of comparable food companies in almost every quarter since 2012, at high and low levels of debt alike. A discount that persistent is structural: investors pay less for a collection of unrelated food businesses than they would for the same businesses on their own. Management's answer has been to borrow and buy back stock. Over the last two fiscal years Post spent about $1.66 billion on its own shares at an average of about $104; those shares are worth about $1.23 billion today. Net debt has stayed near $7.4 billion, about 4.6 times adjusted EBITDA.</p>
+<p>We propose attacking the discount directly by separating the businesses in the right order: sell Weetabix and use the proceeds and free cash flow to bring debt down, then spin off Foodservice so investors can value it on its own. The timing is good: a new CEO took over on October 1, 2026, full-year results arrive around November 19, and $575 million of convertible notes mature in August 2027.</p>
+
+<h2>How we found Post</h2>
+<p>Post came out of a quantitative screen we built to predict activist targets. We collected 259 campaigns launched since 2010 by eight major activist funds (Elliott, Starboard, Trian, ValueAct, Pershing Square, Third Point, Icahn and Jana) from SEC Schedule 13D filings, then trained a model on what targets looked like before each campaign became public: valuation, profitability, growth, leverage, capital allocation, size, and stock performance, all measured against industry peers and using only information available at the time.</p>
+<p>Tested year by year on data it had not seen, the model's top 1% of companies were targeted about 4.5 times as often as average, and its top 10% caught about a quarter of all future campaigns. It ranked Mentor Graphics in its top 0.4% months before Elliott filed in 2016. Scored on today's companies, Post ranked third of about 2,500 U.S. companies that still trade, flagged for its size, weak one-year stock return, and heavy debt. It has ranked in the model's top 10% in five of the last six years.</p>
+<p>The same research shows why the setup is attractive. Across these campaigns, target stocks beat the market by about 6.5% in the three days around the 13D filing, and the gains did not fade. Over the following year, targets that were eventually sold beat the market by about 18%, while those that stayed public roughly matched it. Activism pays most when it changes the company's structure.</p>
+
+<h2>The business</h2>
+<p>Post reports four segments. Over the twelve months to June 30, 2026, they generated about $1.6 billion of adjusted EBITDA.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Segment (main products)</th><th>Adj. EBITDA, last 12 months ($mm)</th><th>Recent trend</th></tr></thead>
+  <tbody>
+    <tr><td>Post Consumer Brands (cereal, pet food, peanut butter)</td><td>809</td><td>Volumes down 7% ex-acquisitions</td></tr>
+    <tr><td>Foodservice (eggs and potatoes for restaurants)</td><td>596</td><td>Inflated ~$60mm by high egg prices</td></tr>
+    <tr><td>Refrigerated Retail (Bob Evans sides, eggs, sausage)</td><td>163</td><td>Cheese business sold May 2026</td></tr>
+    <tr><td>Weetabix (U.K. cereal)</td><td>135</td><td>Profit up, volumes down 4%</td></tr>
+    <tr><td>Corporate costs</td><td>(88)</td><td></td></tr>
+    <tr class="total"><td>Total</td><td>1,616</td><td></td></tr>
+  </tbody>
+</table>
+</div>
+<p class="note">Source: Post Q4 FY2025 and Q3 FY2026 earnings releases. Last twelve months = Q4 FY2025 plus the first nine months of FY2026.</p>
+<p>Management expects fiscal 2027 to start from about $1.48 billion of adjusted EBITDA once temporary egg-price profits and divested businesses are removed, and to be roughly flat from there. In the latest quarter, cereal and granola volumes fell 5.5% and pet food volumes fell 7.8%.</p>
+
+<h2>What is wrong</h2>
+
+<h3>A discount that has lasted more than a decade</h3>
+<p>We compared Post's enterprise value to trailing EBITDA with the median of large U.S. packaged-food peers (General Mills, Kraft Heinz, Conagra, Campbell's, Smucker, Hormel, and Kellanova and WK Kellogg while they traded) every quarter since 2012. Excluding periods distorted by acquisitions and the pandemic, Post traded below its peers in 37 of 39 quarters, at an average of 87.5% of the peer multiple. It trades at 87% today, about 7.3 times management's fiscal 2027 EBITDA base versus about 8.3 times at peer parity.</p>
+<figure>
+<svg viewBox="0 0 640 250" role="img" aria-labelledby="rel-title rel-desc">
+  <title id="rel-title">Post's valuation multiple as a percentage of peers, 2012 to 2026</title>
+  <desc id="rel-desc">Post traded below the packaged-food peer median in 37 of 39 undistorted quarters, averaging 87.5 percent of the peer multiple. Shaded periods 2014 to 2015 and 2020 to 2021 are excluded because acquisitions and the pandemic distorted trailing EBITDA. Latest quarter: 87 percent.</desc>
+  <rect x="97.8" y="30" width="83.9" height="190" fill="var(--rule)" opacity="0.45"/>
+  <rect x="351.1" y="30" width="83.9" height="190" fill="var(--rule)" opacity="0.45"/>
+  <line x1="50" y1="81.8" x2="620" y2="81.8" stroke="var(--muted)" stroke-width="1"/>
+  <text x="618" y="75.8" font-size="11" text-anchor="end" fill="var(--muted)">Peer parity</text>
+  <line x1="50" y1="125.0" x2="620" y2="125.0" stroke="var(--today)" stroke-width="1.3" stroke-dasharray="4 3"/>
+  <text x="56" y="140.0" font-size="11" fill="var(--today)">Average 87.5%</text>
+  <polyline points="50.0,108.0 60.6,102.5 71.1,102.8 81.7,116.3 92.2,59.6" fill="none" stroke="var(--bar-rerate)" stroke-width="2.2"/>
+  <polyline points="187.2,202.9 197.8,195.1 208.3,204.5 218.9,181.6 229.4,151.2 240.0,154.9 250.6,101.1 261.1,148.4 271.7,133.3 282.2,142.5 292.8,147.7 303.3,132.5 313.9,89.2 324.4,106.8 335.0,112.1 345.6,115.9" fill="none" stroke="var(--bar-rerate)" stroke-width="2.2"/>
+  <polyline points="440.6,112.4 451.1,71.0 461.7,100.5 472.2,128.2 482.8,106.1 493.3,113.5 503.9,88.0 514.4,96.2 525.0,115.4 535.6,143.3 546.1,121.8 556.7,121.1 567.2,97.1 577.8,111.2 588.3,123.6 598.9,139.9 609.4,154.5 620.0,128.1" fill="none" stroke="var(--bar-rerate)" stroke-width="2.2"/>
+  <circle cx="620.0" cy="128.1" r="4" fill="var(--bar-rerate)"/>
+  <text x="614.0" y="146.1" font-size="11" text-anchor="end">Today 87%</text>
+  <text x="139.7" y="44" font-size="10.5" text-anchor="middle" fill="var(--muted)">Excluded</text>
+  <text x="393.1" y="44" font-size="10.5" text-anchor="middle" fill="var(--muted)">Excluded</text>
+  <line x1="50" y1="220" x2="620" y2="220" stroke="var(--rule)"/>
+  <text x="44" y="224.0" font-size="11" text-anchor="end" fill="var(--muted)">60%</text>
+  <text x="44" y="154.9" font-size="11" text-anchor="end" fill="var(--muted)">80%</text>
+  <text x="44" y="85.8" font-size="11" text-anchor="end" fill="var(--muted)">100%</text>
+  <text x="60.6" y="238" font-size="11" text-anchor="middle" fill="var(--muted)">2013</text>
+  <text x="145.0" y="238" font-size="11" text-anchor="middle" fill="var(--muted)">2015</text>
+  <text x="229.4" y="238" font-size="11" text-anchor="middle" fill="var(--muted)">2017</text>
+  <text x="313.9" y="238" font-size="11" text-anchor="middle" fill="var(--muted)">2019</text>
+  <text x="398.3" y="238" font-size="11" text-anchor="middle" fill="var(--muted)">2021</text>
+  <text x="482.8" y="238" font-size="11" text-anchor="middle" fill="var(--muted)">2023</text>
+  <text x="567.2" y="238" font-size="11" text-anchor="middle" fill="var(--muted)">2025</text>
+</svg>
+<figcaption>Post's EV / trailing EBITDA as a percentage of the packaged-food peer median, quarterly. Shaded periods are excluded: in 2014–15 and 2020–21, acquisitions and the pandemic temporarily depressed trailing EBITDA and distorted both Post's multiple and its leverage. Source: Compustat quarterly via WRDS (as-reported EBITDA).</figcaption>
+</figure>
+<p>The discount did not close when Post's debt was lower. In the quarters when leverage was below 4.5x, Post traded at about 80% of peers, its widest discount. That rules out leverage as the main cause and points to structure. Post's segments have little in common: Lamb Weston, the closest public comparable for Post's potato business, trades near 10 times EBITDA, while the large cereal and center-store food companies cluster between 8.1x and 8.4x. Inside Post, all of it is valued at about 7.3x.</p>
+
+<h3>Too much debt for a shrinking business</h3>
+<p>Post carries about $7.4 billion of net debt against a market value of about $3.4 billion. Its credit-agreement leverage is 4.6x, or about 5x on management's normalized fiscal 2027 base. Interest cost $419 million over the last year, more than a quarter of EBITDA, and Post's most recent bonds were issued at 6.25%. The pressure is about to rise: $575 million of 2.50% convertible notes mature in August 2027, and refinancing them at current rates would add roughly $20 million a year of interest. (Their conversion price is about $106 per share, so at today's price they will be repaid in cash rather than converted into stock.) With equity a thin slice on top of the debt, each one-turn change in Post's multiple moves the stock by about $37 per share, nearly half of today's price.</p>
+
+<h3>Buybacks that have lost money</h3>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Period</th><th>Shares bought (mm)</th><th>Spent ($mm)</th><th>Avg. price</th><th>Worth today ($mm)</th><th>Gain / (loss)</th></tr></thead>
+  <tbody>
+    <tr><td>Fiscal 2025</td><td>6.4</td><td>709</td><td>$110</td><td>496</td><td>(213)</td></tr>
+    <tr><td>Fiscal 2026 to Aug. 5</td><td>9.5</td><td>948</td><td>$100</td><td>730</td><td>(218)</td></tr>
+    <tr class="total"><td>Total</td><td>16.0</td><td>1,657</td><td>$104</td><td>1,225</td><td>(431)</td></tr>
+  </tbody>
+</table>
+</div>
+<p class="note">Source: Post earnings releases; value today at $76.83 per share (October 12, 2026).</p>
+<p>Had the same $1.66 billion repaid debt, Post would save roughly $104 million of interest a year and its leverage would be about 3.5x. Buybacks are not wrong in principle, but borrowing to buy back stock in a business whose earnings are flat to declining concentrates risk on the remaining shareholders without addressing why the stock is cheap.</p>
+
+<h3>The same people still decide how cash is used</h3>
+<p>The CEO transition on October 1 is welcome, but the former CEO, who designed the current strategy, remains executive chairman with responsibility for capital allocation. Founder and director William Stiritz reported owning 10.3% of the shares in March 2026, and his percentage rises as buybacks shrink the share count. Shareholders get a new operator without a new plan.</p>
+
+<h2>Our plan</h2>
+<ol class="steps">
+  <li><strong>Sell Weetabix.</strong> It is a self-contained U.K. business with the country's top cereal brand and little connection to Post's U.S. operations. At 10 times EBITDA it would fetch about $1.35 billion, roughly $1.2 billion after an assumed 10% for taxes and fees, all used to repay debt.</li>
+  <li><strong>Send free cash flow to debt reduction</strong> until leverage reaches 3.5x, then resume buybacks. Post generates roughly $500 million of free cash flow a year after interest, which brings leverage to about 3.5x by the end of fiscal 2029 in our base case.</li>
+  <li><strong>Commit now to spinning off Foodservice once leverage is near 4x.</strong> It is Post's most distinctive business and the one most likely to earn a higher multiple on its own. The new company would take on debt of about 3x its EBITDA, and the remaining Post would keep the rest. Announcing the commitment and timeline now lets investors start valuing the pieces separately.</li>
+  <li><strong>Create a capital allocation committee of independent directors</strong> to approve buybacks, acquisitions and debt issuance, with leverage targets disclosed to shareholders.</li>
+</ol>
+
+<h2>What the plan is worth</h2>
+<p>We modeled both strategies over three years using management's fiscal 2027 base and Post's own cost structure, calibrated so the model reproduces Post's actual free cash flow over the last twelve months. Under the status quo, Post holds leverage near 5x and spends all free cash flow, plus extra borrowing, on buybacks. Under our plan, Post sells Weetabix and pays down debt as described above. Our core case holds today's multiple for both. The spin-off case then values the two companies separately at the end of fiscal 2029: Foodservice at 9.5 times EBITDA after $30 million a year of new standalone costs, a discount to Lamb Weston's roughly 10x for egg-price cyclicality, and the remaining Post at today's 7.26x, with $75 million of one-time separation costs added to debt.</p>
+
+<figure>
+<svg viewBox="0 0 640 270" role="img" aria-labelledby="chart-title chart-desc">
+  <title id="chart-title">Value per share at the end of fiscal 2029</title>
+  <desc id="chart-desc">Base case: status quo $121, plan at today's multiple $111, plan plus Foodservice spin-off $128. Downside case: status quo $76, plan at today's multiple $81, plan plus spin-off $94. Today's price is $76.83.</desc>
+  <text x="0" y="24" font-size="13" font-weight="600">Base case</text>
+  <text x="0" y="48" font-size="12">Status quo</text>
+  <rect x="200" y="36" width="345" height="16" fill="var(--bar-sq)"/>
+  <text x="551" y="49" font-size="12">$121</text>
+  <text x="0" y="70" font-size="12">Plan, today's multiple</text>
+  <rect x="200" y="58" width="318" height="16" fill="var(--bar-plan)"/>
+  <text x="524" y="71" font-size="12" font-weight="600">$111</text>
+  <text x="0" y="92" font-size="12">Plan + spin-off</text>
+  <rect x="200" y="80" width="366" height="16" fill="var(--bar-rerate)"/>
+  <text x="572" y="93" font-size="12">$128</text>
+
+  <text x="0" y="136" font-size="13" font-weight="600">Downside case</text>
+  <text x="0" y="160" font-size="12">Status quo</text>
+  <rect x="200" y="148" width="216" height="16" fill="var(--bar-sq)"/>
+  <text x="424" y="161" font-size="12">$76</text>
+  <text x="0" y="182" font-size="12">Plan, today's multiple</text>
+  <rect x="200" y="170" width="230" height="16" fill="var(--bar-plan)"/>
+  <text x="436" y="183" font-size="12" font-weight="600">$81</text>
+  <text x="0" y="204" font-size="12">Plan + spin-off</text>
+  <rect x="200" y="192" width="270" height="16" fill="var(--bar-rerate)"/>
+  <text x="476" y="205" font-size="12">$94</text>
+
+  <line x1="419.5" y1="30" x2="419.5" y2="222" stroke="var(--today)" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="419.5" y="240" font-size="11.5" text-anchor="middle" fill="var(--today)">Today $76.83</text>
+  <line class="axis" x1="200" y1="226" x2="600" y2="226"/>
+  <text x="200" y="262" font-size="11" text-anchor="middle" fill="var(--muted)">$0</text>
+  <text x="342.9" y="262" font-size="11" text-anchor="middle" fill="var(--muted)">$50</text>
+  <text x="485.7" y="262" font-size="11" text-anchor="middle" fill="var(--muted)">$100</text>
+  <text x="600" y="262" font-size="11" text-anchor="middle" fill="var(--muted)">$140</text>
+</svg>
+<figcaption>Value per share at the end of fiscal 2029. Base case: EBITDA flat in FY2027, then down 1% a year. Downside: down 4% in FY2027, then 5% a year. "Today's multiple" is 7.26x management's FY2027 EBITDA base. "Spin-off" values Foodservice at 9.5x and the remaining Post at 7.26x at the end of FY2029. Source: Post_Deleveraging_Model.xlsx.</figcaption>
+</figure>
+
+<div class="table-wrap">
+<table>
+  <thead><tr><th>End of FY2029</th><th>Base: value / share</th><th>Annual return</th><th>Downside: value / share</th><th>Net debt / EBITDA (downside)</th></tr></thead>
+  <tbody>
+    <tr><td>Status quo, today's multiple</td><td>$121</td><td>16%</td><td>$76</td><td>5.0x</td></tr>
+    <tr><td>Our plan, today's multiple (core case)</td><td class="hi">$111</td><td class="hi">13%</td><td class="hi">$81</td><td>4.2x</td></tr>
+    <tr><td>Our plan + Foodservice spin-off</td><td>$128</td><td>19%</td><td>$94</td><td>5.1x (remaining Post)</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h3>Where the value comes from (base case, per share)</h3>
+<div class="table-wrap">
+<table>
+  <tbody>
+    <tr><td>Share price today</td><td>$76.83</td></tr>
+    <tr><td>Status quo value creation, if the multiple holds</td><td>+$43.91</td></tr>
+    <tr><td>Our plan versus status quo at the same multiple</td><td>($9.50)</td></tr>
+    <tr class="total"><td>Our plan, core case</td><td>$111.25</td></tr>
+    <tr><td>Foodservice spin-off at the end of FY2029</td><td>+$16.84</td></tr>
+    <tr class="total"><td>Our plan + spin-off</td><td>$128.08</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>What we tested, and the strongest argument against us</h2>
+<p>Our first hypothesis was that paying down debt would, by itself, lift Post's multiple toward its peers. Post's own history does not support that. The discount persisted when leverage was lower, so our core case gives the plan no credit for re-rating from deleveraging alone. Our spin-off case does not assume a re-rating either: it values Foodservice and the remaining Post separately, each at a multiple supported by public comparables. Together they imply about 7.9 times EBITDA for Post as a whole, versus 7.3 times today.</p>
+<p>We also tested the order of steps. Spinning off Foodservice today would add about $21 per share on paper, but it would leave the remaining Post with net debt of about 5.8 times EBITDA: a shrinking cereal and pet food business carrying even more debt relative to its earnings than Post does now. That company would likely trade below today's multiple and erase much of the gain. Paying down debt first brings it to about 4.0x at the time of the spin. In our downside case, leverage at the remaining Post would still be about 5.1x by fiscal 2029, so the board should tie the spin-off to a leverage threshold rather than a fixed date.</p>
+<p>That leaves management's best defense, visible in our own model: if the market keeps valuing Post at today's multiple, the status quo is worth more than our plan, $121 versus $111. Post's free cash flow is about 15% of its market value, so buying back stock this cheaply is very accretive on paper.</p>
+<p>That comparison assumes the one thing Post cannot control. The status quo's value moves about $26 per share for every half-turn change in the multiple; our plan moves about $15. If the multiple slips to 6.5x, the status quo is worth $81 and our plan $89. The break-even multiple is about 6.8x, barely below where Post trades today. In our downside case, buybacks cannot outrun shrinking earnings: the status quo delivers no return over three years and ends with leverage still near 5x, losing 37% of its base-case value versus 28% for our plan. And the status quo has no answer to the discount that has defined Post's valuation for more than a decade. Our plan gives up about $10 per share in the best case in exchange for better protection when things go wrong and a credible path to closing that discount.</p>
+
+<h2>Risks and how management may respond</h2>
+<ul>
+  <li><strong>Weetabix sells for less than 10x.</strong> At 8x, net proceeds fall by about $240 million. The plan still reduces leverage meaningfully; the model lets the sale multiple be tested.</li>
+  <li><strong>The spun-off Foodservice company trades lower than we assume.</strong> Investors may value it like a cyclical egg producer rather than a stable potato business. If it traded at 8.5x and the remaining Post slipped to 6.5x, the two would be worth about $104 per share, below the $111 core case without a spin. We assume $30 million a year of new standalone costs and $75 million of one-time separation costs; both need diligence.</li>
+  <li><strong>Tax leakage is higher than assumed.</strong> We assume 10% on the Weetabix sale. This needs confirming against Post's disclosures on its tax basis.</li>
+  <li><strong>The discount does not close.</strong> Our core case already assumes it does not. The investment then rests on the plan's better downside protection and lower risk.</li>
+  <li><strong>Insiders support management.</strong> Mr. Stiritz's 10.3% stake and his history of backing the current strategy make other large holders important. The argument that the status quo is a leveraged bet on a multiple Post cannot control should resonate with them.</li>
+  <li><strong>Management will say buybacks are the strategy.</strong> We agree they can return capital, after the balance sheet can absorb a bad year. Our plan resumes buybacks once leverage reaches 3.5x.</li>
+</ul>
+
+<h2>Why now</h2>
+<ul>
+  <li>A new CEO started on October 1, 2026, and a new team is a natural moment to reset strategy and capital allocation.</li>
+  <li>Full-year fiscal 2026 results and fiscal 2027 guidance arrive around November 19, ahead of the next annual meeting season.</li>
+  <li>The convertible notes due August 2027 force a refinancing decision within the next year, a natural point to commit to a lower leverage target.</li>
+  <li>About $491 million of buyback authorization remains. Every dollar spent at today's leverage adds to the risk we describe.</li>
+  <li>The stock is down about 23% from where Post was buying back shares in fiscal 2026, so investors are already questioning the approach.</li>
+</ul>
+
+<h2>Appendix: method and sources</h2>
+<h3>Key model assumptions</h3>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Assumption</th><th>Value</th><th>Basis</th></tr></thead>
+  <tbody>
+    <tr><td>FY2027 starting adjusted EBITDA</td><td>$1,480mm</td><td>Management, Q3 FY2026 release</td></tr>
+    <tr><td>Net debt / shares outstanding</td><td>$7,360mm / 44.0mm</td><td>Compustat, October 2026</td></tr>
+    <tr><td>Average interest rate</td><td>5.5%</td><td>TTM interest / debt</td></tr>
+    <tr><td>Capital expenditures</td><td>$350mm a year</td><td>Below FY2026 guide as egg projects finish</td></tr>
+    <tr><td>Weetabix EBITDA / sale multiple</td><td>$135mm / 10.0x</td><td>Segment results; our assumption</td></tr>
+    <tr><td>Tax and fees on sale; stranded costs</td><td>10%; $10mm a year</td><td>Our assumptions</td></tr>
+    <tr><td>Exit multiple: status quo and core plan</td><td>7.26x</td><td>Today's multiple on the FY2027 base</td></tr>
+    <tr><td>Spin-off: Foodservice / remaining Post multiples</td><td>9.5x / 7.26x</td><td>Lamb Weston ~10x, discounted; today's multiple</td></tr>
+    <tr><td>Spin-off: standalone costs; one-time costs; new company leverage</td><td>$30mm a year; $75mm; 3.0x</td><td>Our assumptions</td></tr>
+  </tbody>
+</table>
+</div>
+<h3>Research underlying the screen and the valuation</h3>
+<p>Campaign data: 259 initial Schedule 13D filings by eight activist funds, 2010–2026, collected from SEC EDGAR, after removing three filings that were not campaigns. Event study: CRSP daily returns via WRDS, market-adjusted, with the event day moved to the next trading day for filings accepted after the 4pm close; 252 of 259 campaigns matched to price data. Prediction model: firm-year panel of about 44,000 company-years built from Compustat and CRSP, features measured relative to industry peers, tested walk-forward from 2016 to 2025 with a one-year gap between training and test data. Historical valuation: Compustat quarterly data for Post and eight packaged-food peers, 2012–2026, on as-reported EBITDA; quarters in 2014–15 and 2020–21 excluded from the discount average because acquisitions and the pandemic distorted trailing EBITDA. Comparable companies: Compustat daily prices and quarterly financials, October 2026.</p>
+<h3>Sources</h3>
+<ul>
+  <li><a href="https://www.sec.gov/Archives/edgar/data/0001530950/000153095026000076/ex99-1q32026er.htm">Post Holdings, Q3 fiscal 2026 earnings release (Form 8-K, August 6, 2026)</a></li>
+  <li><a href="https://www.sec.gov/Archives/edgar/data/1530950/000153095025000256/ex99-1q42025er.htm">Post Holdings, Q4 and fiscal 2025 earnings release (Form 8-K, November 20, 2025)</a></li>
+  <li><a href="https://www.sec.gov/Archives/edgar/data/1530950/000153095024000365/post-20240930.htm">Post Holdings, fiscal 2024 Form 10-K (convertible notes terms)</a></li>
+  <li><a href="https://www.sec.gov/Archives/edgar/data/0001530950/000105205826000003/primary_doc.xml">William P. Stiritz, Schedule 13D/A Amendment No. 4 (March 2026)</a></li>
+  <li>Post Holdings press release announcing executive transition, May 7, 2026</li>
+  <li>Compustat and CRSP via Wharton Research Data Services; SEC EDGAR</li>
+</ul>
+
+<footer>Prepared as an independent student research project. Not investment advice. Figures are estimates from public information as of October 13, 2026.</footer>
+</main>
+</body>
+</html>

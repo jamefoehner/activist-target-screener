@@ -1,0 +1,10 @@
+cache/
+cache_wrds/
+data/*
+!data/exclusions.csv
+!data/post_segments.csv
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.pgpass

@@ -2,7 +2,7 @@
 
 An end-to-end research project that collects every major activist campaign since 2010 from SEC filings, measures how target stocks reacted, trains a model to predict which companies activists will target next, and applies it to produce a full activist pitch on the model's top-ranked large company, Post Holdings.
 
-**Author:** James Foehner, B.S. Data Science, Northeastern University (Khoury College), expected May 2027
+**Author:** James Foehner, B.S. Data Science, Northeastern University, expected May 2027
 
 ---
 

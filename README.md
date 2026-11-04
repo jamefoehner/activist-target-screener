@@ -26,7 +26,7 @@ A model trained only on information public at the time ranked companies each yea
 | Logistic regression | 0.73 | 19% | 3.5x |
 | Gradient boosting | 0.73 | 27% | 3.5x |
 
-It ranked Mentor Graphics in its top 0.4% months before Elliott's 2016 campaign, and Caesars, GoDaddy, and Symantec in their top 1% before their campaigns. Targets tend to be large, cheap on EBITDA relative to peers, more indebted, and coming off a weak year for the stock. Strong profitability, strong recent returns, and large cash balances make a company *less* likely to be targeted.
+It ranked Rapid7 in its top 0.2% before Jana's 2024 campaign, E2open in its top 0.4% before Elliott's 2023 campaign, and Wix, GoDaddy, and Mentor Graphics in roughly their top 1–1.5% before Starboard's and Elliott's campaigns. Targets tend to be large, cheap on EBITDA relative to peers, more indebted, and coming off a weak year for the stock. Strong profitability, strong recent returns, and large cash balances make a company *less* likely to be targeted.
 
 **4. Spin-offs have not reliably created value since 2010.**
 Across 182 U.S. spin-offs in which the new company was worth at least $100M, an investor holding the parent and the new shares trailed the market by about **10% over three years** (median −19%). Spin-offs that were large relative to the parent and in a different industry trailed by about 13%, with outcomes ranging from roughly −100% to +136%. Parents rose only about 1% around the new company's first public Form 10, and spin-offs since 2017 fared worst. One notable exception was Post's own 2022 BellRing spin-off, which beat the market by about 106% over three years.

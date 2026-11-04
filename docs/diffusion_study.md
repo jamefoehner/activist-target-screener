@@ -4,7 +4,7 @@
 
 ## Summary
 
-When an activist hedge fund files a Schedule 13D, the target's stock jumps, but not all at once. Across 248 campaigns since 2010, targets beat the market by **5.6% on the filing day and the next day**, then drifted up a further **2.0% over the following three weeks**. The typical target absorbed only **43%** of its total move immediately.
+When an activist hedge fund files a Schedule 13D, the target's stock jumps, but not all at once. Across 225 campaigns since 2010, targets beat the market by **5.9% on the filing day and the next day**, then drifted up a further **1.8% over the following three weeks**. The typical target absorbed only **46%** of its total move immediately.
 
 The drift is concentrated where investors pay less attention. It is largest for stocks that normally respond slowly to market-wide news (high *price delay*) and for filings that land on busy news days. The price-delay effect survives trimming outliers, median regression, a control for illiquidity, and an adjustment for testing six measures at once.
 
@@ -25,7 +25,7 @@ Gradual information diffusion theory (Hong & Stein, 1999) holds that news reache
 
 ## Data and method
 
-- **Events:** 252 initial 13D filings by eight activists (Elliott, Starboard, Trian, ValueAct, Pershing Square, Third Point, Icahn, Jana), 2010–2026, from SEC EDGAR. 248 have complete returns.
+- **Events:** 232 initial 13D campaigns by eight activists (Elliott, Starboard, Trian, ValueAct, Pershing Square, Third Point, Icahn, Jana), 2010–2026, from SEC EDGAR, after removing 30 filings that were not new campaigns (spin-off inheritances, control positions, restructurings, amendment text, activist SPACs, and repeat filings within 12 months). 227 match to CRSP and 225 have complete returns.
 - **Returns:** CRSP daily returns via WRDS, market-adjusted (stock return minus the Fama-French market return). Filings accepted after the 4pm close are measured from the next trading day.
 - **Reaction windows:** before (days −10 to −1), immediate (days 0 to +1), and drift (days +2 to +20).
 - **Attention measures,** taken before each filing:
@@ -48,30 +48,30 @@ Gradual information diffusion theory (Hong & Stein, 1999) holds that news reache
 
 | Measure | Low-attention group | High-attention group |
 |---|---|---|
-| Price delay | **+5.7%** (slowest third) | −1.4% (fastest third) |
-| Busy day | **+4.6%** (busiest third) | +0.6% (quietest third) |
-| Size | **+5.0%** (smallest third) | −0.3% (largest third) |
-| Analysts | +4.0% (fewest) · 0.0% (middle) | +2.0% (most) |
-| After close | +2.9% (after 4pm) | +0.5% (during trading) |
-| Friday | −1.3% (Friday) | +3.0% (other days) |
+| Price delay | **+5.1%** (slowest third) | −1.5% (fastest third) |
+| Busy day | **+4.3%** (busiest third) | +0.4% (quietest third) |
+| Size | **+4.4%** (smallest third) | −0.6% (largest third) |
+| Analysts | +4.0% (fewest) · −0.5% (middle) | +1.7% (most) |
+| After close | +2.6% (after 4pm) | +0.5% (during trading) |
+| Friday | −1.2% (Friday) | +2.8% (other days) |
 
-The share of the move absorbed immediately (days 0–1) tells a mixed story. It lines up with analyst coverage, at a median of 60% for the most-covered third versus 29% for the least-covered. It does not line up with size or price delay: the slowest-responding third absorbed 59% immediately, versus 26% for the fastest. The ratio is noisy, because many campaigns have small total moves, so the drift measures above are more reliable.
+The share of the move absorbed immediately (days 0–1) tells a mixed story. It lines up with analyst coverage, at a median of 60% for the most-covered third versus 26% for the least-covered. It does not line up with size or price delay: the slowest-responding third absorbed 60% immediately, versus 27% for the fastest. The ratio is noisy, because many campaigns have small total moves, so the drift measures above are more reliable.
 
 ### Regression t-statistics across specifications
 
 | Measure | Baseline | Trimmed 5/95 | Median regression | + Illiquidity control |
 |---|---|---|---|---|
-| Price delay | 2.58 | 3.14 | 2.44 | **2.66** |
-| Busy day | 2.02 | 1.86 | 2.03 | **2.03** |
-| Size | −2.43 | −2.20 | −2.09 | 0.67 |
-| Analysts | −0.56 | 0.22 | −0.41 | 0.85 |
-| Friday | −1.52 | −1.04 | −0.42 | −1.48 |
-| After close | 1.00 | 0.97 | 0.28 | 0.92 |
-| Illiquidity | — | — | — | 1.47 |
+| Price delay | 2.52 | 3.12 | 2.71 | **2.65** |
+| Busy day | 2.14 | 1.66 | 1.90 | **2.20** |
+| Size | −1.82 | −1.52 | −1.99 | 1.46 |
+| Analysts | −0.98 | −0.19 | −0.73 | 0.60 |
+| Friday | −1.34 | −0.93 | −0.39 | −1.23 |
+| After close | 0.87 | 0.78 | 0.17 | 0.78 |
+| Illiquidity | — | — | — | 1.82 |
 
-*n = 226 campaigns with all measures available. |t| above about 2 is roughly significant at the 5% level.*
+*n = 213 campaigns with all measures available. |t| above about 2 is roughly significant at the 5% level.*
 
-**Multiple testing.** Testing six measures raises the chance that one looks significant by luck. After a Holm adjustment, price delay has p = 0.059 in the baseline and **p = 0.046 with the illiquidity control**. Busy day (raw p = 0.04) is consistent in every specification but not significant after adjustment.
+**Multiple testing.** Testing six measures raises the chance that one looks significant by luck. After a Holm adjustment, price delay has p = 0.071 in the baseline and **p ≈ 0.048 with the illiquidity control**. Busy day (raw p = 0.03) is consistent in every specification but not significant after adjustment.
 
 ### Trading test
 
@@ -79,11 +79,11 @@ Combining size, analysts, price delay, and busy day into one attention score, bu
 
 | Group | Return vs. market | t | Profitable | After 1% costs | After 2% costs |
 |---|---|---|---|---|---|
-| High attention | −0.8% | −1.0 | 42% | −1.8% | −2.8% |
-| Middle | +0.9% | 0.9 | 54% | −0.1% | −1.1% |
-| **Low attention** | **+5.8%** | **3.1** | **68%** | +4.8% | +3.8% |
+| High attention | −0.8% | −0.9 | 42% | −1.8% | −2.8% |
+| Middle | +0.6% | 0.5 | 54% | −0.4% | −1.4% |
+| **Low attention** | **+5.5%** | **2.8** | **67%** | +4.5% | +3.5% |
 
-The low-minus-high difference is 6.6 percentage points (t = 3.2). After 2% round-trip costs, the median low-attention trade earns only +0.9%, so the average depends on a minority of large winners.
+The low-minus-high difference is 6.3 percentage points (t = 3.0). After 2% round-trip costs, the median low-attention trade earns only +0.9%, so the average depends on a minority of large winners.
 
 ## Interpretation
 
@@ -94,9 +94,9 @@ The low-minus-high difference is 6.6 percentage points (t = 3.2). After 2% round
 
 ## Limitations
 
-- **Sample size.** About 250 events limits statistical power; results after the multiple-testing adjustment are suggestive rather than conclusive.
+- **Sample size.** About 225 events limits statistical power; results after the multiple-testing adjustment are suggestive rather than conclusive.
 - **In-sample trading test.** The attention score and its cutoffs were built with full-sample data after the first results were seen. A fair test would build them from past data only.
-- **Not a strategy.** About 82 low-attention trades over 16 years, concentrated in small, costly-to-trade stocks.
+- **Not a strategy.** About 75 low-attention trades over 16 years, concentrated in small, costly-to-trade stocks.
 - **Only 13D campaigns by eight activists,** so smaller stakes and other funds are excluded.
 - **Market-adjusted returns** don't control for size or industry risk; over a three-week window this matters little, but it is not zero.
 

@@ -1,4 +1,31 @@
 accession,reason,subject_name
 0000902664-17-003873,"shares received in debt restructuring, not a campaign",Ocean Rig UDW Inc.
 0001193125-18-202609,"activist-sponsored SPAC, not a campaign",Far Point Acquisition Corp
-0000921895-11-000971,"duplicate of next-morning refiling",OPENWAVE SYSTEMS INC
+0000921895-11-000971,duplicate of next-morning refiling,OPENWAVE SYSTEMS INC
+0000928464-13-000007,"controlling parent (Icahn) after CVR Refining IPO, not a campaign",CVR Refining LP
+0000928464-20-000019,"amendment text (Class B conversion after spin-off did not occur), not a campaign start",
+0001193125-19-306193,"activist founder (Ackman) already chairman of the Issuer, not a campaign start",
+0000928464-15-000036,"shares received in spin-off (Separation) from a company Icahn already targeted, not a new campaign",
+0000928464-16-000175,"shares received in spin-off (Separation) from a Former Parent Icahn had settled with, not a new campaign",
+0000921895-15-002420,"shares received in spin-off (Starboard held parent), not a new campaign",
+0000928475-11-000008,"Icahn received Motorola Mobility shares in the Separation from Motorola; post-campaign outcome, not a new campaign",Motorola Mobility
+0000928464-18-000148,separate Icahn filing after ending joint 13D with Corvex (option exercise after Diamondback deal); campaign began with earlier joint 13D,Energen
+0000910627-10-000039,"Icahn already a director of the Issuer, not a campaign start",
+0000928464-16-000205,shares received in Separation; 3 Icahn designees moved from Former Parent board; not a new campaign,
+0001013594-17-000401,"equity/warrants/nominating rights from restructuring or recapitalization, not a campaign","Affinion Group Holdings, Inc."
+0001013594-17-000347,"shares received in bankruptcy emergence, not a campaign",PEABODY ENERGY CORP
+0000921669-12-000049,amendment text in original 13D (Item 4 of the Initial Schedule 13D is hereby amended),NAVISTAR INTERNATIONAL CORP
+0000928464-12-000246,"units (preferred + warrants) acquired in company rights offering / recapitalization, not a campaign start",MOTRICITY INC
+0000921669-14-000005,"shares received in Separation (spin-off), not a new campaign",Seventy Seven Energy Inc.
+0000928464-17-000003,"shares received in Separation from Former Parent, not a new campaign",CONDUENT Inc
+0001104659-24-035665,"Icahn controls the issuer (CVR Partners via CVR Energy), not a campaign","CVR PARTNERS, LP"
+0001193125-14-365690,"pre-IPO sponsor/holder switching from 13G to 13D, not a campaign start",Platform Specialty Products Corp
+0000930413-24-002266,"shares from spin-off/rights offering of Pershing-affiliated issuer, not a campaign",Seaport Entertainment Group Inc.
+0001011438-21-000191,"activist-sponsored SPAC business combination, not a campaign","Cyxtera Technologies, Inc."
+0000921895-22-002925,"recapitalization of issuer with existing Starboard governance agreement, not a campaign start",ACACIA RESEARCH CORP
+0001345471-20-000059,amendment text in original 13D (Original Schedule 13D is hereby amended),Invesco Ltd.
+0000950170-24-073806,amendment text in original 13D (share sales update),Invesco Ltd.
+0000921669-12-000053,repeat initial 13D within 12 months of an earlier one by the same activist (362 days); same campaign,NAVISTAR INTERNATIONAL CORP
+0001013594-18-000382,"repeat initial 13D within 12 months (311 days); same campaign, filed at deal end (support agreement)",NXP Semiconductors N.V.
+0000928464-20-000021,repeat initial 13D within 12 months (258 days); same campaign,"Cloudera, Inc."
+0000902664-26-002944,repeat initial 13D within 12 months (89 days); same campaign,"ALKAMI TECHNOLOGY, INC."

@@ -14,7 +14,7 @@ Across 227 campaigns by eight major activists (Elliott, Starboard, Trian, ValueA
 ![Average cumulative abnormal return around 13D filings](figures/average_car.png)
 
 **2. The long-term payoff comes from targets getting sold.**
-One-year returns versus the market averaged only about 2% and were not statistically significant. Split by outcome, targets acquired or delisted within a year beat the market by about **18%**, while targets that stayed public roughly matched it. On announcement day the market could not yet tell the two groups apart.
+One-year returns versus the market averaged only about 2% and were not statistically significant. Split by outcome, targets acquired or delisted within a year beat the market by about **19%** (35 targets, t = 4.9), while targets that stayed public roughly matched it (−1%). On announcement day the market could not yet tell the two groups apart.
 
 **3. Targets can be predicted well above chance.**
 A model trained only on information public at the time ranked companies each year from 2016 to 2025, tested out of sample:

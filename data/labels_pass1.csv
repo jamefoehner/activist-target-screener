@@ -1,0 +1,101 @@
+item_id,board_seats,sale_or_review,breakup_spin,capital_return,operations_costs,management_change,governance,oppose_deal,engagement_only,seats,proxy_fight,tone,ambiguous,notes,capital_discipline
+1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,yes,confrontational,0.0,,0
+4,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no,neutral,1.0,,0
+5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,,0
+6,0.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,no,confrontational,1.0,,0
+7,1.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,no,neutral,1.0,Icahn template,0
+8,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,"Boilerplate; topic list incl. operations, governance, management",0
+9,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,"Dialogue started re ‘maximize shareholder value’; rest boilerplate (mentions potential acquirers, board composition)",0
+10,0.0,0.0,1.0,0.0,1.0,0.0,0.0,1.0,0.0,0.0,no,confrontational,1.0,,0
+11,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,Elliott minimal template; no specifics,0
+12,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,Elliott minimal template; ‘strategic alternatives’ only in reserve-the-right language,0
+13,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,"Topic list incl. ‘operations (including cost structure)’, ‘governance and board composition’; co-investor Sachem Head (Item 6)",0
+14,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,Icahn minimal template; no specifics,0
+15,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,6.0,yes,confrontational,1.0,6 nominated; intends to withdraw 2 → 4. Discussions re board representation ongoing,0
+17,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,Same template as earlier ‘expect to engage’ filing; topic list only,0
+20,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,yes,confrontational,1.0,"Full-board removal via special meeting; seat count not stated. Implied sale push (Horizon $33 bid). ‘Questionable capital allocation’ (capital discipline, no category)",0
+21,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no,neutral,1.0,EXCLUDE: not a campaign — Icahn controlling parent after CVR Refining IPO,0
+22,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,no,neutral,0.0,Strategic review request is inside the boilerplate paragraph. Activist may participate in a transaction (possible buyer).,0
+23,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no,neutral,1.0,"EXCLUDE: amendment text, not a campaign start (Class B conversion after spin-off didn’t occur)",0
+24,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no,cooperative,0.0,Push for strategic review / merger with Mitel; activist offers financing. Parallel 13D on Mitel with the same rationale.,0
+25,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no,neutral,1.0,"EXCLUDE: activist’s founder is already chairman; likely reorganization filing, not a campaign start",0
+26,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,1.0,"Vague ‘opportunities to enhance shareholder value.’ Anchors to the pre-purchase price ($12.19), which implies a sale context. ‘Advocating for a sales process’ appears only in boilerplate.",0
+27,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,Starboard boilerplate template; ‘continuing to engage’ implies talks already underway,0
+28,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,Topic-list template. Triggered by Fairholme’s proposed transaction for preferred holders; no position taken. Federal government named as a party (likely Fannie Mae / Freddie Mac).,0
+30,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no,neutral,1.0,Icahn style. Will discuss the company’s existing strategic review (no stated position). Hedged board representation,0
+31,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,Icahn minimal template,0
+32,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,no,neutral,1.0,"Preferred-stock holder group (Third Point plus others) locked up to vote against amendments in Smulyan take-private. 13D concerns preferred stock, not common.",0
+33,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no,cooperative,1.0,Tender and Support Agreement for raised Qualcomm offer ($127.50). End of campaign; Elliott’s earlier opposition to the original price isn’t in this filing,0
+34,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,1.0,Elliott. Unspecified ‘strategic and operational opportunities.’ ‘Highly strategic area… value not reflected’ implies sale appeal. ‘Advocating for a sales process’ only in boilerplate.”,0
+35,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,2.0,no,cooperative,1.0,Negotiated $200M preferred investment + governance agreement; Smith named Chairman. 3 agreed appointees (2 Starboard-designated + CEO); 1–2 more independents to come. Standstill.,0
+36,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no,neutral,1.0,EXCLUDE: shares received in a spin-off from a company Icahn already targeted (Former Parent); not a new campaign,0
+37,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,yes,confrontational,0.0,Starboard; intends to nominate a slate for the 2025 meeting; slate size not stated; ongoing talks re board representation,0
+40,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,no,confrontational,1.0,"Governance campaign: exec comp, board refreshment. Conditional threat re board composition at next annual meeting (‘reserve the right’). Capital allocation concerns (capital discipline, no category).",0
+41,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,Template B (expect to engage; topic list),0
+42,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,Starboard template; ‘opportunities for value creation’ only,0
+44,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,Icahn minimal template; talks already underway,0
+45,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,"Starboard template, no company-specific text",0
+46,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no,neutral,0.0,EXCLUDE: shares received in spin-off (‘Separation’) from a Former Parent Icahn had settled with; not a new campaign,0
+47,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,Starboard template (older variant); ‘seeking board representation or the annual election of directors’ only in boilerplate,0
+48,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,7.0,yes,confrontational,0.0,Elliott 7-person slate for 2015 annual meeting; nominee compensation/indemnity agreements; reserves consent solicitation if meeting delayed. Reserves right to withdraw or add nominees.”,0
+49,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,Template B (expect to engage; topic list)”,0
+50,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,4.0,yes,confrontational,1.0,Icahn / Forest Labs. 4-person minority slate. Criticism of CEO Solomon and the board’s funding of his fight against OIG-HHS exclusion; Section 220 books-and-records request. No explicit CEO-replacement demand.,0
+51,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,Starboard template; ‘continuing to engage,0
+52,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no,neutral,1.0,EXCLUDE: shares received in spin-off (Starboard held parent); not a new campaign,0
+53,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,2.0,no,cooperative,1.0,"Post-settlement 13D: 2 settlement nominees + 1 new director; Strategic Committee evaluating Starboard’s proposals (operations, separation of two businesses, ‘alternative financial structures’). Standstill. Campaign began before this filing.",0
+54,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no,neutral,1.0,"EXCLUDE: Icahn received Motorola Mobility shares in the Separation from Motorola; board seat/poison-pill terms agreed as part of the split, not a new campaign”",0
+55,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no,cooperative,1.0,"Elliott. Wants operational, capital structure and strategic review initiatives; only ‘strategic review’ names a specific action. Details in letter to the board, not in Item 4.",0
+56,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no,neutral,1.0,"Icahn. Topic list (operations, capex, financings, exec comp); hedged board representation; no talks with company yet.",0
+57,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,1.0,"Icahn minimal. ‘May have conversations… to discuss its business and strategic alternatives’: hedged topic, no stated plan.",0
+59,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,no,cooperative,0.0,"Jana / New Relic cooperation agreement: 2 agreed nominees (1 Jana partner, 1 mutual). Withdrew May 20, 2022 nomination. Campaign began before this filing.",0
+60,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no,neutral,1.0,EXCLUDE: separate Icahn filing after ending joint 13D with Corvex; reports option exercise after Diamondback deal; campaign began with earlier joint 13D,0
+61,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,Elliott minimal template,0
+62,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,Explicitly lists (a)–(j) as actions it has NO plans for; investment purposes only,0
+63,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no,neutral,1.0,Elliott as potential acquirer/financier; ‘strategic opportunities… transactions’ without the word ‘sale’ or ‘review,0
+67,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no,neutral,1.0,EXCLUDE: Icahn already a director of the Issuer; not a campaign start,0
+68,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,Starboard template (older variant); ‘seeking board representation’ only in boilerplate,0
+69,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,yes,confrontational,1.0,Starboard / Avid. 3 nominees. Complains board set nomination deadline on Dec 26 (Christmas) via new advance-notice bylaws; no explicit request to change bylaws.,0
+70,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,no,confrontational,1.0,Starboard / Office Depot. 7 specific cost/margin levers. Values non-core Office Depot de Mexico JV at >50% of EV (implied monetization). Criticizes management urgency; hopes for constructive dialogue.,0
+71,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,"Bare template: investment purposes, no plans; refers to Item 6 (not visible)",0
+72,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,1.0,"Icahn / Netflix 2012. ‘Significant strategic value for… significantly larger companies’ implies a sale, but ‘considering ways… have reached no conclusion’; may seek discussions in future.",0
+73,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,cooperative,0.0,Elliott template; ‘constructive dialogue regarding steps to maximize shareholder value,0
+74,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no,neutral,1.0,EXCLUDE: shares received in Separation; 3 Icahn designees moved from Former Parent’s board; not a new campaign,0
+75,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no,neutral,1.0,EXCLUDE: equity/warrants/nominating rights from restructuring; not a campaign,0
+76,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,4.0,yes,confrontational,0.0,Starboard / LivePerson. 4-person slate for 2022 meeting; ongoing talks re board representation. Mostly nominee bios.,0
+77,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5.0,yes,confrontational,1.0,Starboard / Symantec. 5-person slate for 2018 meeting; ‘constructive dialogue’ re unlocking value incl. board composition. Mostly nominee bios.,0
+78,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,"Starboard template, no company-specific text",0
+79,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,"Starboard template, no company-specific text",0
+80,0.0,1.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,no,confrontational,1.0,"Starboard / Darden. Mgmt’s Red Lobster separation plan ‘falls significantly short.’ Wants dramatic operating improvement, real estate monetization, exploring business sale/separation. Capital allocation as topic.",0
+82,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no,neutral,1.0,Icahn via CVR Energy (CVI) as potential acquirer of the Issuer; ‘potential transactions involving the Issuer and CVI.’ Activist-controlled strategic buyer.,0
+84,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,1.0,"HSR filing for more shares; met CEO and lead director (Stallkamp); letter delivered Aug 5, 2015 (Exhibit 3) but NOT summarized in Item 4. Discussion topics: operating strategies, performance, management succession, governance.",0
+85,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,Jana template (older). Topics incl. ‘corporate structure’ and capitalization; talks with management already held. Likely Ashland.,0
+86,1.0,1.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,3.0,no,cooperative,1.0,"Icahn / Southwest Gas. Settlement of tender offer ($75→$82.50) + proxy contest: CEO retires, 3 Icahn designees, governance changes, Icahn designees on Strategic Transactions Committee. Slate withdrawn; Delaware suit dismissed. Campaign began Oct 2021, before this filing. Utility.",0
+87,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,"Starboard template, no company-specific text",0
+88,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,Starboard template (older variant); same company as earlier item (Extreme Networks),0
+89,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,1.0,"Jana template. ‘May have discussions… including industry consolidation, capitalization, capital allocation, operations and board composition’ (topics). ‘Industry consolidation’ hints at M&A.",0
+90,1.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,no,neutral,1.0,"Icahn. Intends discussions on improving operations, pursuing strategic alternatives, possible board representation.",0
+93,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,1.0,"Jana. Topics: board composition, management, capital structure, corporate structure. Asked board to DELAY the nomination deadline for the 2014 meeting (implied possible nomination; no stated intention).",0
+94,0.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,no,neutral,1.0,"Starboard / PAREXEL. Improve margins vs peers; press reports company exploring sale. Starboard takes position: run a ‘legitimate, robust process.’ Retained industry advisor (ex-INC Research CEO).",0
+95,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,no,cooperative,1.0,Starboard / GCP 2019. Settlement: 2 New Directors; board-size cap. Company’s own strategic review (incl. potential sale); Starboard only monitoring. Settlement-era filing; campaign may predate it.,0
+96,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,no,confrontational,1.0,Icahn opposes Blackstone merger consideration as inadequate (likely Dynegy 2010); may seek conversations.,0
+97,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,"Starboard template, no company-specific text",0
+99,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,"Starboard template, no company-specific text",0
+18,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,no,neutral,1.0,Board composition discussed (topic only). Concern over ‘further acquisitions and investments’ (no category fits),1
+65,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,0.0,0.0,no,neutral,1.0,"Jana / PetSmart. Directions: explore sale, return capital, improve operations, improve disclosure. Topics: capital allocation policy (capital discipline), management and board composition.",1
+66,1.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,3.0,yes,confrontational,1.0,Jana / ConAgra. Conditional nomination of 3 named nominees + proxy solicitation; asked to delay nomination deadline for talks. Strategic review incl. corporate structure (possible separation); ops/cost structure; capital allocation & structure (capital discipline). Criticizes Ralcorp acquisition.,1
+83,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,no,confrontational,1.0,"Jana (+ Continental Grain) / Lamb Weston. Strategic review; operating deficiencies; capex discipline (align capacity with utilization, improve returns, re-evaluate capex): capital discipline; comp targets on ROIC; disclosure. Buybacks, board composition as topics.",1
+92,1.0,1.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,yes,confrontational,0.0,"Jana / Whole Foods 2017. Directions on board & mgmt change, governance, many ops/cost items, strategic review (company unwilling to engage buyers). Real estate & capital allocation/ROIC (capital discipline). Conditional nomination with signed agreements → proxy yes. Company sold to Amazon ~2 months later.",1
+98,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,no,confrontational,1.0,"Starboard 2011. Stop acquisitions (urges no more capital to M&A) → capital discipline. Improve margins/utilization; cut costs. Governance concern (ISS withhold recs 2 yrs), no stated fix.",1
+3,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,0.0,0.0,no,cooperative,0.0,,1
+19,0.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,no,cooperative,0.0,Trian style; ‘optimizing new store openings’ = spending discipline,1
+58,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,no,confrontational,0.0,Jana opposes Charles River’s WuXi acquisition; will vote against the share issuance. Met with both CEOs first.,0
+16,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no,neutral,1.0,Topic list; only ‘exploring a sale’ names a direction. ‘Portfolio composition’ could hint at divestiture. Conditional director proposal = reserve-right.,0
+38,0.0,0.0,1.0,1.0,0.0,1.0,1.0,0.0,0.0,0.0,no,neutral,1.0,Jana / QEP. Separate midstream (QEPFS); add midstream-experienced directors and executives; align comp; return capital. ‘Other strategic alternatives’ only as possible topic,0
+43,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no,neutral,1.0,Jana template. ‘Exploring a sale… or asset divestitures’ names directions; rest are topics. Likely Callaway / Topgolf (golf business vs. ‘other factors’).,0
+100,1.0,0.0,1.0,1.0,0.0,0.0,1.0,0.0,0.0,6.0,yes,confrontational,0.0,Elliott / Telecom Italia 2018. Replace 6 Vivendi-appointed directors; unify share classes; sell part of NetCo/Sparkle and cut leverage; reinstate dividend. Foreign issuer (ISIN).,1
+2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,0.0,corrected after review,0
+29,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,cooperative,0.0,Elliott template; ‘sale… in which the Reporting Persons may participate’ only in boilerplate | corrected after review,0
+64,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,no,neutral,1.0,"Jana. Discussions ‘regarding management succession and board composition’ (topics, no stated direction); may discuss capital allocation, strategy. Conditional director proposal = reserve-right. | corrected after review",0
+81,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no,neutral,1.0,"ValueAct (only ValueAct filing). Long topic list; specific question whether a ValueAct employee should join the board. Capital allocation, M&A strategy as topics | corrected after review",0
+39,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no,neutral,1.0,Elliott. Will push strategic review / sale of the company or its businesses; Elliott ‘will seek to participate as a purchaser or investor.’ Payments business highlighted | corrected after review,0
+91,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,no,neutral,1.0,Trian / Janus Henderson. Consolidation thesis for asset managers; will encourage exploring mergers/combinations; Trian may participate (may already hold stakes in counterparties). Board representation within topic list. Talked with chairman Gillingwater. | corrected after review,0

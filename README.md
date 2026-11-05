@@ -6,6 +6,9 @@ An end-to-end research project that collects every major activist campaign since
 
 ---
 
+
+**Follow-up studies:** [Do activist filings reach prices slowly?](docs/diffusion_study.md) · [Can language models read activist filings? An LLM evaluation](docs/llm_eval_writeup.md)
+
 ## Key findings
 
 **1. Activist campaigns create an immediate, lasting jump in value.**
